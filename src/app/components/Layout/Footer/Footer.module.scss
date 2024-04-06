@@ -17,8 +17,8 @@
 		font-weight: bold;
 		font-size: 20px;
 		color: white;
-		text-shadow: 2px 0 #ff6fe9, -2px 0 #974a84, 0 2px #974a84, 0 -2px #974a84,
-			1px 1px #ff6fe9, -1px -1px #974a84, 1px -1px #ff6fe9, -1px 1px #974a84;
+		text-shadow: 2px 0 #b12aff, -2px 0 #b12aff, 0 2px #b12aff, 0 -2px #b12aff,
+			1px 1px #b12aff, -1px -1px #b12aff, 1px -1px #b12aff, -1px 1px #b12aff;
 		cursor: default;
 	}
 }
@@ -37,9 +37,10 @@
 		li {
 			list-style-type: none;
 			color: white;
+			font-weight: bold;
 			:hover {
-				transition-duration: 0.5s;
-				color: #ff6fe9;
+				transition: 0.5s;
+				color: #ff8aed;
 			}
 		}
 	}
@@ -71,5 +72,29 @@
 		margin-bottom: 15px;
 	}
 	p {
+	}
+}
+
+@media (max-width: 765px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.logoSection {
+		align-self: center;
+		img {
+			width: auto;
+			height: 100px;
+		}
+		.logoImage {
+			position: relative;
+			left: 30px;
+		}
+	}
+	.favLink {
+		ul {
+			grid-template-columns: 1fr;
+			row-gap: 10px;
+		}
 	}
 }
