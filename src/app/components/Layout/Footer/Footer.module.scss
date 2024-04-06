@@ -1,0 +1,75 @@
+.wrapper {
+	height: auto;
+	padding: 10px 20px 10px 20px;
+	background-color: rgb(42, 42, 42);
+	display: grid;
+	grid-template-columns: 1fr minmax(200px, 1400px);
+	grid-template-rows: 1fr 0.5fr;
+	gap: 20px 50px;
+	grid-template-areas:
+		'logo favLink'
+		'socialMediaLink socialMediaLink';
+}
+.logoSection {
+	p {
+		position: relative;
+		bottom: 30px;
+		font-weight: bold;
+		font-size: 20px;
+		color: white;
+		text-shadow: 2px 0 #ff6fe9, -2px 0 #974a84, 0 2px #974a84, 0 -2px #974a84,
+			1px 1px #ff6fe9, -1px -1px #974a84, 1px -1px #ff6fe9, -1px 1px #974a84;
+		cursor: default;
+	}
+}
+
+.favLink {
+	height: 50%;
+	align-self: center;
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto;
+		column-gap: 20px;
+		row-gap: 5px;
+		font-size: 20px;
+		li {
+			list-style-type: none;
+			color: white;
+			:hover {
+				transition-duration: 0.5s;
+				color: #ff6fe9;
+			}
+		}
+	}
+}
+
+.socialMediaLink {
+	grid-area: socialMediaLink;
+	display: grid;
+	justify-content: center;
+}
+
+.line {
+	height: 1px;
+	width: 80vw;
+	min-width: 300px;
+	background-color: rgba(255, 255, 255, 0.583);
+	justify-self: center;
+}
+
+.underLineBlock {
+	display: flex;
+	margin-top: 10px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	.developLogo {
+		cursor: pointer;
+		margin-bottom: 15px;
+	}
+	p {
+	}
+}

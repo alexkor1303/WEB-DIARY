@@ -1,34 +1,34 @@
 export const ListData = [
-  {
-    link: "/",
-    name: "Home",
-    icon: "someWay",
-  },
-  {
-    link: "notes",
-    name: "My emotions",
-    icon: "someWay",
-  },
-  {
-    link: "task",
-    name: "Tasks",
-    icon: "someWay",
-  },
-  {
-    link: "study",
-    name: "Study",
-    icon: "someWay",
-  },
-  {
-    link: "work",
-    name: "Work",
-    icon: "someWay",
-  },
-  {
-    link: "memories",
-    name: "My memories",
-    icon: "someWay",
-  },
-];
+	{
+		link: '/',
+		name: 'Home',
+		icon: './homeIcon.svg',
+	},
+	{
+		link: 'emonotes',
+		name: 'My emotions',
+		icon: './emotionIcon.svg',
+	},
+	{
+		link: 'task',
+		name: 'Tasks',
+		icon: './tasksIcon.svg',
+	},
+	{
+		link: 'study',
+		name: 'Study',
+		icon: './homeIcon.svg',
+	},
+	{
+		link: 'work',
+		name: 'Work',
+		icon: './workIcon.svg',
+	},
+	{
+		link: 'memories',
+		name: 'My memories',
+		icon: './memoriesIcon.svg',
+	},
+]
 
-export default ListData;
+export default ListData

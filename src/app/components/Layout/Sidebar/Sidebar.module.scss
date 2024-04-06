@@ -1,32 +1,45 @@
 .wrapper {
-  background-color: rgb(165, 131, 216);
-  padding: 10px;
-  transition: all 1s;
+	background-color: rgb(163, 21, 68);
+	padding: 10px;
+}
+.sidebarWrapper {
+	position: fixed;
 }
 .sidebarLogo {
-  display: flex;
-  margin-bottom: 20px;
-  img {
-    height: 50px;
-    margin-right: 10px;
-  }
+	display: flex;
+	margin-bottom: 20px;
+	img {
+		margin-right: 10px;
+	}
 
-  h2 {
-    color: white;
-    font-size: 15px;
-    line-height: 16px;
-  }
+	h2 {
+		color: white;
+		font-size: 15px;
+		line-height: 16px;
+		cursor: default;
+	}
 }
 .sidebarlist {
-  li {
-    list-style: none;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0 0 20px 5px;
-  }
+	li {
+		list-style: none;
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+		margin: 0 0 20px 5px;
+		img {
+			margin-right: 10px;
+		}
+		a {
+			transition: ease-in-out 0.2s;
+		}
+	}
+	:hover {
+		a {
+			font-size: 23px;
+		}
+	}
 }
 .activeLink {
-  color: red;
-  background-color: white;
+	color: #eee;
+	background-color: white;
 }
