@@ -1,0 +1,32 @@
+.wrapper {
+  background-color: rgb(165, 131, 216);
+  padding: 10px;
+  transition: all 1s;
+}
+.sidebarLogo {
+  display: flex;
+  margin-bottom: 20px;
+  img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  h2 {
+    color: white;
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+.sidebarlist {
+  li {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 20px 5px;
+  }
+}
+.activeLink {
+  color: red;
+  background-color: white;
+}
