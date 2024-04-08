@@ -33,8 +33,8 @@ export const Sidebar: FunctionComponent<Props> = ({ layoutStyle }) => {
               <li key={i}>
                 <Image
                   src={listElem.icon}
-                  width={20}
-                  height={20}
+                  width={30}
+                  height={30}
                   alt={`${listElem.name}+ icon`}
                 />
                 <a href={listElem.link}>{listElem.name}</a>

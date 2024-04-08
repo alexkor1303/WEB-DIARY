@@ -1,45 +1,48 @@
 .wrapper {
-	background-color: rgb(212, 95, 134);
-	padding: 10px;
+  background-color: rgb(212, 95, 134);
+  padding: 10px;
 }
 .sidebarWrapper {
-	position: fixed;
+  position: fixed;
 }
 .sidebarLogo {
-	display: flex;
-	margin-bottom: 20px;
-	img {
-		margin-right: 10px;
-	}
+  display: flex;
+  margin-bottom: 20px;
+  img {
+    margin-right: 10px;
+  }
 
-	h2 {
-		color: white;
-		font-size: 15px;
-		line-height: 16px;
-		cursor: default;
-	}
+  h2 {
+    color: white;
+    font-size: 15px;
+    line-height: 16px;
+    cursor: default;
+  }
 }
 .sidebarlist {
-	li {
-		list-style: none;
-		color: white;
-		font-weight: bold;
-		font-size: 20px;
-		margin: 0 0 20px 5px;
-		img {
-			margin-right: 10px;
-		}
-		a {
-			transition: ease-in-out 0.2s;
-		}
-	}
-	:hover {
-		a {
-			font-size: 23px;
-		}
-	}
+  li {
+    display: flex;
+    height: 30px;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 20px 5px;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+    a {
+      transition: ease-in-out 0.2s;
+    }
+  }
+  :hover {
+    a {
+      font-size: 23px;
+    }
+  }
 }
 .activeLink {
-	color: #eee;
-	background-color: white;
+  color: #eee;
+  background-color: white;
 }

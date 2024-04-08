@@ -10,11 +10,10 @@
     cursor: default;
   }
   .lower_block_wrapper {
+    display: grid;
     h1 {
       color: white;
-      position: relative;
-      left: 50%;
-      right: 50%;
+      justify-self: center;
     }
   }
 }

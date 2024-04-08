@@ -1,10 +1,18 @@
-import { FunctionComponent } from "react";
+"use client";
+import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 import style from "./Button.module.scss";
 import cn from "classnames";
-
-interface Props {
+interface Props
+  extends DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   text: string;
 }
-export const Button: FunctionComponent<Props> = ({ text }) => {
-  return <button className={cn(style.standart)}>{text}</button>;
+export const Button = ({ text, onClick, ...rest }: Props): JSX.Element => {
+  return (
+    <button onClick={onClick} className={cn(style.standart)}>
+      {text}
+    </button>
+  );
 };

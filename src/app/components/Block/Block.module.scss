@@ -1,9 +1,15 @@
 .wrapper {
-  background-color: var(--pink);
   box-sizing: border-box;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 25px;
   height: auto;
   margin: 0;
   padding: 10px;
+}
+
+.color_pink {
+  background-color: var(--pink);
+}
+.color_white {
+  background-color: white;
 }

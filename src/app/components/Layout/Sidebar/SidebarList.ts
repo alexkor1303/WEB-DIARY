@@ -17,7 +17,7 @@ export const ListData = [
   {
     link: "/study",
     name: "Study",
-    icon: "/homeIcon.svg",
+    icon: "/studyIcon.svg",
   },
   {
     link: "/work",
