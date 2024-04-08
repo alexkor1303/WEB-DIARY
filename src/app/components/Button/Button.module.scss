@@ -1,0 +1,17 @@
+.standart {
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: var(--pink);
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    font-size: 20px;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.2);
+    &:active {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.155);
+    }
+  }
+}

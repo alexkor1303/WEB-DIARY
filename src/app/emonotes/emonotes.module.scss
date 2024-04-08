@@ -1,0 +1,20 @@
+.main_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 40px;
+  .upper_block_wrapper {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    color: white;
+    cursor: default;
+  }
+  .lower_block_wrapper {
+    h1 {
+      color: white;
+      position: relative;
+      left: 50%;
+      right: 50%;
+    }
+  }
+}

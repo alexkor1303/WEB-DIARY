@@ -5,27 +5,27 @@ export const ListData = [
     icon: "/homeIcon.svg",
   },
   {
-    link: "emonotes",
+    link: "/emonotes",
     name: "My emotions",
     icon: "/emotionIcon.svg",
   },
   {
-    link: "task",
+    link: "/task",
     name: "Tasks",
     icon: "/tasksIcon.svg",
   },
   {
-    link: "study",
+    link: "/study",
     name: "Study",
     icon: "/homeIcon.svg",
   },
   {
-    link: "work",
+    link: "/work",
     name: "Work",
     icon: "/workIcon.svg",
   },
   {
-    link: "memories",
+    link: "/memories",
     name: "My memories",
     icon: "/memoriesIcon.svg",
   },
