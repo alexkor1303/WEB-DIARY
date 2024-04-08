@@ -1,7 +1,7 @@
 export default function MemoriesDetails({
-	params,
+  params,
 }: {
-	params: { memoriesId: string }
+  params: { memoriesId: string };
 }) {
-	return <div>Mym memory № {params.memoriesId}</div>
+  return <div>Mym memory № {params.memoriesId}</div>;
 }

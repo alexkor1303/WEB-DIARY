@@ -1,4 +1,3 @@
-"use client";
 import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 import style from "./Button.module.scss";
 import cn from "classnames";
