@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Block, Button, Htag, ModalWindow } from "../components/index";
+import { Block, Button, Htag, ModalWindow } from "../../app/components/index";
 import style from "./emonotes.module.scss";
 
 export default function Emotional() {

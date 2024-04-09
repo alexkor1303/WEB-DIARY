@@ -1,14 +1,16 @@
+"use client";
 import { FunctionComponent } from "react";
 import ListData from "./SidebarList";
 import style from "./Sidebar.module.scss";
 import cn from "classnames";
 import Image from "next/image";
-
+import { usePathname } from "next/navigation";
 interface Props {
   layoutStyle: string;
 }
 
 export const Sidebar: FunctionComponent<Props> = ({ layoutStyle }) => {
+  const pathName = usePathname();
   return (
     <div className={cn(layoutStyle, style.wrapper)}>
       <div className={style.sidebarWrapper}>
@@ -29,8 +31,9 @@ export const Sidebar: FunctionComponent<Props> = ({ layoutStyle }) => {
         </div>
         <ul className={cn(style.sidebarlist)}>
           {ListData.map((listElem, i) => {
+            const isActive = pathName[1] === listElem.link[1]; //garbage code
             return (
-              <li key={i}>
+              <li key={i} className={isActive ? cn(style.activePage) : ""}>
                 <Image
                   src={listElem.icon}
                   width={30}
