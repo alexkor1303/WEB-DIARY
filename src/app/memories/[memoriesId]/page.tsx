@@ -1,3 +1,15 @@
+import { Metadata } from "next";
+type Props = {
+  params: {
+    memoriesId: string;
+  };
+};
+export const generateMetadata = ({ params }: Props): Metadata => {
+  return {
+    title: `Memory ${params.memoriesId}`,
+  };
+};
+
 export default function MemoriesDetails({
   params,
 }: {
