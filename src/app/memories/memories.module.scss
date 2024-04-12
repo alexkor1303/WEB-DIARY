@@ -1,0 +1,66 @@
+.wrapper {
+  display: grid;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+
+  .photoBlock {
+    position: relative; /* Добавлено, чтобы корректно позиционировать внутренние элементы */
+  }
+
+  img {
+    width: 100%; /* Занимает 100% ширины родительского блока */
+    height: auto; /* Подстраивается под соотношение сторон изображения */
+    display: block; /* Убирает лишние пробелы вокруг изображения */
+  }
+
+  span {
+    border: 3px red solid;
+    border-radius: 30px;
+  }
+}
+
+/* Для блоков фотографий не нужно создавать отдельные стили, так как они уже содержат классы photoBlock1, photoBlock2 и т.д. */
+
+.photoBlock1 {
+  grid-area: photoBlock1;
+}
+
+.photoBlock2 {
+  grid-area: photoBlock2;
+}
+
+.photoBlock3 {
+  grid-area: photoBlock3;
+}
+
+.photoBlock4 {
+  grid-area: photoBlock4;
+}
+
+.photoBlock5 {
+  grid-area: photoBlock5;
+}
+
+.photoBlock6 {
+  grid-area: photoBlock6;
+}
+
+.photoBlock7 {
+  grid-area: photoBlock7;
+}
+
+.photoBlock8 {
+  grid-area: photoBlock8;
+}
+
+.photoBlock9 {
+  grid-area: photoBlock9;
+}
+
+.photoBlock10 {
+  grid-area: photoBlock10;
+}
+
+.photoBlock11 {
+  grid-area: photoBlock11;
+}

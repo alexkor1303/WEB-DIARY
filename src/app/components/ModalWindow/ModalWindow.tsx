@@ -3,9 +3,10 @@ import {
   ButtonHTMLAttributes,
   DetailedHTMLProps,
 } from "react";
-import { Block, Htag } from "../";
+import { Block, Htag, Button } from "../";
 import style from "./ModalWindow.module.scss";
 import cn from "classnames";
+
 interface Props
   extends DetailedHTMLProps<
     ButtonHTMLAttributes<HTMLButtonElement>,
@@ -28,6 +29,8 @@ export const ModalWindow: FunctionComponent<Props> = ({
         <Block color="white">
           <div className={style.modalBlock_window}>
             <Htag tag="h2">Emotional note constructor</Htag>
+            {/* заглушка для отправки формы */}
+            <Button onClick={onClick} text="Create note" />
           </div>
         </Block>
         <button className={style.modalBlock_button} onClick={onClick}>

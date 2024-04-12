@@ -8,6 +8,11 @@
     justify-content: space-between;
     color: white;
     cursor: default;
+    Button {
+      &:hover {
+        font-size: 18px;
+      }
+    }
   }
   .lower_block_wrapper {
     display: grid;
